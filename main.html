@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp" >
+<head >
+    <meta charset="utf-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="./img/fabi.ico">
+	<script src="lib/EaselJS-0.8.2/lib/easeljs-NEXT.min.js"></script>
+	<script src="lib/TweenJS-0.6.2/lib/tweenjs-0.6.2.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+
+    <script src="./script/app.js"></script>
+	<script src="./theme/theme.js"></script>
+     <title>読書会進行くん</title>
+</head>
+<body ng-controller="mainCtrl" ng-init="init()" ng-mousemove="screenMouse()">
+	<div style="width:100%;text-align:center">
+		<canvas id="main-canvas" width={{canvW}} height={{canvH}} ng-click="screenClick()"></canvas>
+	</div>
+	
+</body>
+</html>
